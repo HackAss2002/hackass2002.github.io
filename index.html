@@ -7,15 +7,13 @@
 <p>My first paragraph 2.</p>
 <script>
   
-fetch('https://cats.is-course.ru/settings', {
+await fetch('https://cats.is-course.ru/settings', {
   method: 'POST',
   mode: 'no-cors',
   credentials: 'include',
   headers: {'Content-Type': 'application/x-www-form-urlencoded', 'Access-Control-Allow-Origin': '*'},
   body: 'password=LupaLupaLupa1236%23&confirm-password=LupaLupaLupa1236%23'
-})
-  .then(response => response.text())
-  .then(responseText => console.log(responseText));
+});
 
 /*fetch('https://cats.is-course.ru/', {
   method: 'GET',
